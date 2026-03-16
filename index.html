@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ericson Erum | Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="#home">Ericson</a>
+
+    <div class="header-actions">
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode" aria-pressed="false">
+        <span class="theme-icon" aria-hidden="true">🌙</span>
+      </button>
+
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+
+    <nav class="nav" aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#resume">Resume</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- HOME -->
+<section id="home" class="hero">
+  <div class="container hero-inner">
+    <h1 class="reveal">Hi, I'm <span class="accent">Ericson Erum</span></h1>
+    <p class="lead reveal">Aspiring Web Developer &amp; IT Student building modern, responsive experiences.</p>
+    <div class="typewriter reveal" data-words='["JavaScript Enthusiast","UI/UX Lover","Problem Solver"]'>
+      <span class="typewriter-text"></span>
+      <span class="typewriter-cursor">|</span>
+    </div>
+
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary">View My Work</a>
+      <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+
+<section id="about" class="section section--alt">
+  <div class="container">
+    <div class="section-header">
+      <h2>About Me</h2>
+      <p>I’m a motivated learner who loves turning ideas into clean, accessible websites. I’m focused on frontend development, building projects that look great on any device.</p>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-image">
+        <img src="profile.jpg" alt="Profile Photo">
+      </div>
+      <div>
+        <h3>What I do</h3>
+        <ul class="about-list">
+          <li>Responsive web design (HTML &amp; CSS)</li>
+          <li>Modern JavaScript + DOM interactivity</li>
+          <li>Accessible UI &amp; performance-focused pages</li>
+        </ul>
+
+        <div class="about-extra">
+          <h4>Beyond the screen</h4>
+          <p>I love exploring nature, making music, and learning new languages. When I'm not coding, you'll find me hiking, sketching interface ideas, or reading about design systems.</p>
+          <p class="fun-fact"><strong>Fun fact:</strong> I enjoy building mini games just for fun — one of my favorites is a pixel-art quiz game.</p>
+        </div>
+
+        <a href="#resume" class="btn btn-outline">Download Resume</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills" class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Skills</h2>
+      <p>Front-end skills I use to build modern web experiences.</p>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <h3>HTML</h3>
+        <div class="skill-bar">
+          <div class="skill-filled" data-percent="90"></div>
+        </div>
+        <span class="skill-label">90%</span>
+      </div>
+
+      <div class="skill-card reveal">
+        <h3>CSS</h3>
+        <div class="skill-bar">
+          <div class="skill-filled" data-percent="85"></div>
+        </div>
+        <span class="skill-label">85%</span>
+      </div>
+
+      <div class="skill-card reveal">
+        <h3>JavaScript</h3>
+        <div class="skill-bar">
+          <div class="skill-filled" data-percent="70"></div>
+        </div>
+        <span class="skill-label">70%</span>
+      </div>
+
+      <div class="skill-card reveal">
+        <h3>Soft Skills</h3>
+        <ul class="skills-list">
+          <li>Problem solving</li>
+          <li>Communication</li>
+          <li>Collaboration</li>
+          <li>Adaptability</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects" class="section section--alt">
+  <div class="container">
+    <div class="section-header">
+      <h2>Projects</h2>
+      <p>Some of the work I’ve built while learning new skills.</p>
+    </div>
+
+    <div class="projects-grid">
+      <article class="project-card reveal">
+        <img src="https://via.placeholder.com/440x240?text=Student+Form" alt="Student Form preview" class="project-img">
+        <h3>Student Form</h3>
+        <p>A polished form layout with validation and responsive design.</p>
+        <p class="project-tech">HTML | CSS | JavaScript</p>
+        <div class="project-links">
+          <a href="#" target="_blank" rel="noopener" class="btn btn-secondary">Live demo</a>
+          <a href="#" target="_blank" rel="noopener" class="btn btn-outline">Source</a>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <img src="https://via.placeholder.com/440x240?text=Responsive+Layout" alt="Responsive Layout preview" class="project-img">
+        <h3>Responsive Layout</h3>
+        <p>A mobile-friendly site layout built with CSS Flexbox and Grid.</p>
+        <p class="project-tech">HTML | CSS | Grid</p>
+        <div class="project-links">
+          <a href="#" target="_blank" rel="noopener" class="btn btn-secondary">Live demo</a>
+          <a href="#" target="_blank" rel="noopener" class="btn btn-outline">Source</a>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <img src="https://via.placeholder.com/440x240?text=JavaScript+Calculator" alt="JavaScript Calculator preview" class="project-img">
+        <h3>JavaScript Calculator</h3>
+        <p>A functional calculator demo using clean JavaScript logic.</p>
+        <p class="project-tech">HTML | CSS | JavaScript</p>
+        <div class="project-links">
+          <a href="#" target="_blank" rel="noopener" class="btn btn-secondary">Live demo</a>
+          <a href="#" target="_blank" rel="noopener" class="btn btn-outline">Source</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Contact</h2>
+      <p>Have a project idea or just want to say hi? Send a message!</p>
+    </div>
+
+    <form id="contactForm" class="contact-form" novalidate>
+      <div class="form-row">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+      </div>
+
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@email.com" required>
+      </div>
+
+      <div class="form-row">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Send Message</button>
+      <p class="form-feedback" aria-live="polite"></p>
+
+      <div class="social-links">
+        <a href="https://github.com" target="_blank" rel="noopener" class="social-link">GitHub</a>
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener" class="social-link">LinkedIn</a>
+        <a href="mailto:youremail@example.com" class="social-link">Email</a>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- RESUME -->
+
+<section id="resume" class="section section--alt">
+  <div class="container">
+    <div class="section-header">
+      <h2>Resume</h2>
+      <p>Download a copy of my resume to see my experience and skills.</p>
+    </div>
+
+    <div class="resume-intro">
+      <p class="resume-summary">Experienced student developer with a strong foundation in frontend development and a passion for crafting clean, accessible user interfaces. Skilled in HTML, CSS, and JavaScript with a focus on responsive design and user-centered experiences.</p>
+
+      <div class="resume-grid">
+        <div class="resume-block">
+          <h3>Education</h3>
+          <ul>
+            <li><strong>IT Degree Candidate</strong> — XYZ University (2023–2026)</li>
+            <li><strong>Web Programming Essentials</strong> — Completed coursework on HTML, CSS, JS</li>
+          </ul>
+        </div>
+
+        <div class="resume-block">
+          <h3>Experience</h3>
+          <ul>
+            <li><strong>Student Project Developer</strong> — Created responsive web projects and UI components.</li>
+            <li><strong>Collaborative Team Work</strong> — Worked with peers to build full-stack prototypes.</li>
+          </ul>
+        </div>
+
+        <div class="resume-block">
+          <h3>Tools &amp; Tech</h3>
+          <ul>
+            <li>Git &amp; GitHub</li>
+            <li>VS Code</li>
+            <li>Figma (UI Prototyping)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="resume-actions">
+        <a href="assets/resume.pdf" download class="btn btn-primary">Download Resume</a>
+        <a href="#contact" class="btn btn-outline">Let’s Talk</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© 2026 Ericson Erum</p>
+    <p class="footer-note">Built with HTML, CSS &amp; JavaScript.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

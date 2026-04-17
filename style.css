@@ -252,13 +252,21 @@ a:hover,
 }
 
 /* Sections */
-.section,
-.hero {
-  min-height: calc(100vh - 70px);
+.section {
+  min-height: 100vh;
   padding: 5.5rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  scroll-margin-top: 90px;
+}
+
+.hero {
+  min-height: 100vh;
+  padding: 3.5rem 0;
+  display: grid;
+  place-items: center;
+  text-align: center;
   scroll-margin-top: 90px;
 }
 

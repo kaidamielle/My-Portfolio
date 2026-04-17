@@ -252,12 +252,14 @@ a:hover,
 }
 
 /* Sections */
-.section {
-  min-height: 100vh;
+.section,
+.hero {
+  min-height: calc(100vh - 70px);
   padding: 5.5rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  scroll-margin-top: 90px;
 }
 
 .section--alt {
@@ -414,6 +416,7 @@ a:hover,
   border-radius: var(--radius);
   box-shadow: rgba(0, 0, 0, 0.25) 0 10px 35px -20px;
   transition: transform 220ms ease, box-shadow 220ms ease;
+  overflow: hidden;
 }
 
 .project-card:hover,
@@ -426,7 +429,7 @@ a:hover,
   border-radius: 18px;
   margin-bottom: 1rem;
   width: 100%;
-  height: auto;
+  max-height: 120px;
   object-fit: cover;
   border: 1px solid rgba(233, 237, 249, 0.15);
 }

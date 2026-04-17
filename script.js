@@ -33,6 +33,36 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+// Change header color on scroll for dark mode
+const siteHeader = document.querySelector('.site-header');
+const sectionsToDetect = ['about', 'skills', 'projects', 'contact', 'resume'];
+
+function updateHeaderColorOnScroll() {
+  const isDarkMode = document.body.dataset.theme !== 'light';
+  let isInPinkSection = false;
+
+  sectionsToDetect.forEach(sectionId => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      const rect = section.getBoundingClientRect();
+      if (rect.top <= 100 && rect.bottom >= 100) {
+        isInPinkSection = true;
+      }
+    }
+  });
+
+  if (siteHeader && isDarkMode) {
+    if (isInPinkSection) {
+      siteHeader.style.background = 'rgba(255, 20, 147, 0.25)';
+    } else {
+      siteHeader.style.background = 'rgba(7, 9, 19, 0.3)';
+    }
+  }
+}
+
+window.addEventListener('scroll', updateHeaderColorOnScroll);
+updateHeaderColorOnScroll();
+
 // Contact form validation + feedback
 const contactForm = document.getElementById('contactForm');
 const feedback = document.querySelector('.form-feedback');

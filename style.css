@@ -405,9 +405,9 @@ a:hover,
 /* Projects */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.75rem;
-  max-width: 960px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -419,8 +419,7 @@ a:hover,
   box-shadow: rgba(0, 0, 0, 0.25) 0 10px 35px -20px;
   transition: transform 220ms ease, box-shadow 220ms ease;
   overflow: hidden;
-  max-width: 420px;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .project-card:hover,

@@ -405,7 +405,8 @@ a:hover,
 /* Projects */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  justify-content: center;
   gap: 1.75rem;
   max-width: 1400px;
   margin: 0 auto;
@@ -420,6 +421,7 @@ a:hover,
   transition: transform 220ms ease, box-shadow 220ms ease;
   overflow: hidden;
   width: 100%;
+  max-width: 420px;
 }
 
 .project-card:hover,
